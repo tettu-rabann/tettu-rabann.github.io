@@ -1,0 +1,25 @@
+@media(max-width:1000px){
+  .container{
+
+  }
+}
+
+@media(max-width:670px){
+  .top-wrapper h1{
+    text-align:center;
+    padding:0 20px;
+  }
+
+  .right-header{
+    display:none;
+
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  .icon2{
+    width:100px;
+  }
+}
