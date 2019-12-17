@@ -4,13 +4,17 @@
 }
 
 body{
-  background: #f8f8f8;
-  font-family: Verdana, sans-serif;
-  margin: 0;
+  background:#f8f8f8;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin:0;
 }
 
 a{
   text-decoration:none;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
 }
 
 .container{
@@ -27,18 +31,6 @@ header{
   font-size:20px;
   position:fixed;
   z-index:10;
-}
-
-.icon{
-  width:60px;
-  border-radius:30px;
-  margin-top:15px;
-  float:left;
-}
-.icon2{
-  width:350px;
-  border-radius:30px;
-  margin:30px;
 }
 
 .left-header{
@@ -88,15 +80,18 @@ header{
 
 .right-header a:hover{
   background-color:rgba(255,255,255,0.3);
-  color:yellow;
+
 }
+
+/*---------------------------トップ-------------------------------*/
 
 .top-wrapper{
   width:100%;
-  height:950px;
-  padding-top:360px;
-  background-image: url("../img/background.jpg");
+  height:800px;
+  padding-top:165px;
+  background-image: url("../img/back-image30.jpg");
   background-size:cover;
+  opacity:0.8;
 }
 
 .top-sentence{
@@ -106,11 +101,14 @@ header{
 }
 
 .top-wrapper h1{
+  font-family: 'Lobster', cursive;
+  text-align:center;
+  font-size:70px;
+  letter-spacing:2px;
+}
 
-  font-size:50px;
-  letter-spacing:10px;
-  padding-left:50px;
-  color:orange;
+.top-wrapper h3{
+  text-align: center;
 }
 
 .top-wrapper a{
@@ -119,116 +117,252 @@ header{
 }
 
 .top-wrapper p{
+  text-align:center;
   font-size:18px;
   font-weight:bold;
   margin:0;
+  padding-bottom:50px;
+  border-bottom:4px;
+  border-style:none none solid none;
 }
 
-.top-wrapper li{
-  font-weight:bold;
+.top-wrapper img{
+  width:40%;
 }
-/*-------------------------------自己紹介欄----------------------------------------*/
 
+
+/*----------------------ページ紹介-------------------------*/
+
+.this-wrapper{
+  height:900px;
+  padding:40px;
+  background-image:url("../img/back-image38.jpg");
+  background-size:cover;
+  opacity:0.7;
+}
+
+
+.this-wrapper h1{
+  text-align:center;
+  font-size:50px;
+  margin-top:0;
+  margin-bottom:120px;
+  padding-top:40px;
+}
+
+.this-wrapper img{
+  width:200px;
+  padding-top:100px;
+}
+
+.this.wrapper p{
+  text-align:center;
+}
+
+.this-wrapper ul{
+  /*text-align:center;*/
+}
+
+.this-wrapper li{
+  font-size:18px;
+}
+/*----------------------自己紹介-------------------------*/
 .own-wrapper{
-  background-color:#f7f7f7;
-  width:100%;
-
+  padding-top:30px;
+  background-image:url("../img/back-image36.jpg");
+  background-size:cover;
+  height:1200px;
 }
 
 .own-wrapper h1{
-  border-top:1px solid gray;
-  margin-top:70px;
-  font-family:cursive;
-  font-size:50px;
-  padding-top:30px;
-  padding-left:40px;
-  letter-spacing:10px;
+  background-color:gray;
+  opacity:0.9;
+  font-size:40px;
+  letter-spacing:4px;
+  font-size:60px;
+  text-align:center;
+  margin:70px 0 60px 0;
+  color:orange;
+  border:4px solid gray;
+   padding-bottom:10px;
 }
 
-.flex-list{
-  display:flex;
-  align-items:flex-start;
+.own-wrapper img{
+  width:230px;
+  border-radius:115px;
 }
 
-.flex-item{
-  font-weight:bold;
-  padding-top:30px;
-}
-
-.flex-item p{
-  padding:4px;
+.own-wrapper p{
+  padding:2px 0 4px 4px;
   border-bottom:1px solid gray;
-  border-left:4px solid green;
+  border-left:5px solid orange;
 }
 
-.flex-item a{
-  padding:4px;
-  cursor:pointer;
-  transition:all 0.5s;
-  border-left:4px solid green;
-  border-bottom:1px solid gray;
+.own-wrapper h2{
+  padding-bottom:50px;
+  font-size:30px;
+  margin-top:10px;
 }
 
-.flex-item a:hover{
-  color:#55acee;
+.own-center{
+  padding:0 300px;
+  text-align:center;
 }
 
+/*----------------------趣味紹介-------------------------*/
 
-/*---------------------------------趣味紹介ー------------------------------------*/
 .hobby-wrapper{
-  padding-top:400px;
-  height:800px;
-  background-image:url("../img/back-image5.jpg");
-  background-size:cover;
+  padding-top:60px;
+  background-image: url("../img/back-image35.jpg");
 }
 
-
-
-.hobby-title{
+.hobby-wrapper h1{
+  text-align:center;
   font-size:50px;
-  letter-spacing:8px;
-  color:#fff;
-  padding:10px;
 }
 
-.hobby-image{
-  width:50px;
+.hobby-wrapper img{
+  border:1px solid gray;
 }
 
-/*---------------------------------フッター--------------------------------------*/
+.hobby-wrapper h2{
+  text-align: center;
+  font-size:28px;
+  margin-top:40px;
+}
+
+.hobby-wrapper p{
+  font-size:15px;
+  padding-bottom:16px;
+}
+
+.hobby-btn{
+  text-align: center;
+}
+
+.hobby-btn a{
+  text-align: center;
+  padding:15px 25px;
+  background-color:orange;
+  color:black;
+  border-radius:2px;
+  transition:all 0.5s;
+}
+
+.hobby-btn a:hover{
+  opacity:0.8;
+}
+
+.hobby-row{
+  display:flex;
+  align-items: flex-start;
+}
+
+.hobby-column{
+  flex-direction:column;
+  margin-left:30px;
+}
+
+.hobby-center{
+  margin:40px 230px;
+}
+
+
+
+/*----------------------参考リンク-------------------------*/
+
+.link-wrapper{
+  height:600px;
+}
+
+/*----------------------フッタ-------------------------*/
 
 footer{
-  background-color: rgba(34, 49, 52, 0.9);
-  height:90px;
-  width:100%;
+  height:370px;
+  background-color:rgba(34,49,52,0.9);
+  color:white;
+  margin:40px 0 5px 0;
+  padding-top:1px;
 }
 
-.right-footer{
-  float:right;
+footer a{
+  color:white;
+  font-size: 15px;
 }
 
-.left-footer p{
-  display:inline-block;
-  color:rgba(255,255,255,0.7);
+footer h3{
+  font-size:28px;
+  border-bottom:1px solid gray;
 }
 
-.left-footer a{
-  color:rgba(255,255,255,0.7);
+.footer-row{
+  display:flex;
+}
+
+.footer-column{
+  display:flex;
+  flex-direction:column;
+  width:25%;
+}
+
+.footer-column p{
+  text-align: left;
+  font-size:15px;
+}
+
+.footer-column a{
   transition:all 0.5s;
+  opacity:0.7;
+
 }
 
-.left-footer a:hover{
-  color:rgba(255,255,255,1);
+.footer-column a:hover{
+  opacity:1.0;
 }
 
-.twitter{
-  font-size:35px;
-  margin:30px;
+.footer-column-link a{
+  margin-right:20px;
+  margin-left: 10px;
+}
+
+.twitter-icon{
   color: #55acee;
   cursor:pointer;
-  opacity:0.7;
+  opacity:0.5;
   transition:all 0.5s;
 }
-.twitter:hover{
+
+.twitter-icon:hover{
   opacity:1.0;
+}
+
+.youtube-icon{
+  color:#c4302b;
+  cursor:pointer;
+  opacity:0.5;
+  transition:all 0.5s;
+}
+
+.youtube-icon:hover{
+  opacity:1.0;
+}
+
+.studioM{
+  margin:0;
+  padding:0;
+  width:30px;
+  border-radius:30px;
+  opacity:0.5;
+  transition:all 0.5s;
+}
+
+.studioM:hover{
+  opacity:1.0;
+}
+
+footer p{
+  text-align: center;
+  font-size:10px;
+  margin-top:40px;
+
 }
