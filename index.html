@@ -2,61 +2,76 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta http-equiv="content-type" content = "text/html" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <meta charset = "shift_jis">
     <title>Own profile</title>
     <link rel = "stylesheet" href = "css/styles.css">
+    <link rel = "stylesheet" href = "css/responsive.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
-      <a name="title"></a>
       <div class="container">
         <div class="right-header">
-          <a href="#top" class = "btn">はじめに</a>
-          <a href="#own" class = "btn">自己紹介</a>
-          <a href="#hobby" class = "btn">趣味紹介</a>
-          <a href="#link" class = "btn">リンク</a>
+          <a class = "first-btn btn">はじめに</a>
+          <a class = "btn own-btn">自己紹介</a>
+          <a class = "btn Hobby-btn">趣味紹介</a>
+          <a class = "btn link-btn">Links</a>
+          <div id="menu-icon" class="btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div id ="menu-contents" class = "off">
+            <div id="cross-icon">
+              <i class="fas fa-times"></i>
+            </div>
+
+            <h2>menu</h2>
+            <i class="fas fa-user-circle"></i>
+            <p>はじめに</p>
+            <p>自己紹介</p>
+            <p>趣味紹介</p>
+            <p>Links</p>
+          </div>
         </div>
 
         <div class="left-header">
-          <a href="#title"　class ="btn"><p>Own profile</p></a>
+          <a class ="btn title-btn btn"><p>Own profile</p></a>
         </div>
       </div>
     </header>
 
-    <div class="top-wrapper">
+    <div id="title" class="top-wrapper">
       <div class="container">
         <h1>Own profile</h1>
         <p>  このページをご覧いただきありがとうございます！このページでは簡単ではありますが、私の自己紹介をまとめてみました。ぜひ参考までにご覧ください。</p>
       </div>
     </div>
 
-    <a name = "top"></a>
     <div class="this-wrapper">
       <div class="container">
-            <h1>はじめに</h1>
-            <p>　このページでは、私の簡単な自己紹介をまとめたページとなっています。　主に基本的な情報についてまとめてページとなっています。　今回紹介する情報は以下に並べる項目の通りです。</p>
+            <h1 id="first">はじめに</h1>
+            <p>　このページでは、私、池端徹治の簡単な自己紹介をまとめたページとなっています。　主に基本的な情報についてまとめてページとなっています。　今回紹介する情報は以下に並べる項目の通りです。</p>
             <ul>
               <li>自己紹介</li>
               <li>趣味紹介</li>
               <li>参考リンク</li>
             </ul>
             <p>上記の中でも特に趣味紹介を多く取り上げていきたいと思います。　また、今回の制作にあたって特にデザインについて力をいれて制作しました。参考にした本やサイトについてはページ下部にまとめていますので、興味のある点があれば参考までにご覧ください。</p>
-            <img src="./img/back-image24.jpg" alt="ページ下部にジャンプ">
       </div>
     </div>
 
-    <a name="own"></a>
     <div class="own-wrapper">
       <div class="container">
-        <h1>My profile</h1>
+        <h1 id ="own">My profile</h1>
         <div class="own-center">
           <img src="./img/icon3.png" alt="自己紹介アイコン">
-          <h2>tettu</h2>
+          <h2>池端　徹治</h2>
           <p>出身地：愛知県</p>
           <p>生年月日：1999年　3月2日</p>
+          <p>所属大学：中京大学</p>
           <p>サークル：軽音楽サークル「スタジオM」</p>
           <p>好きな食べ物：コーラ、マグロの刺身</p>
           <p>好きなアーティスト：FIVE NEW OLD</p>
@@ -65,20 +80,28 @@
       </div>
     </div>
 
-    <a name="hobby"></a>
-    <div class="hobby-wrapper">
+    <div id="hobby" class="hobby-wrapper">
       <div class="container">
         <a name="hobby-now"></a>
         <h1>趣味紹介</h1>
         <div class="hobby-row">
           <img src="./img/Drum-4.jpg" alt="ドラムの画像1" width = "40%">
           <div class="hobby-column">
+            <p>　以下では、私の趣味について簡単にまとめています。　詳細については、「Next more...」のボタンをクリックしてみてください。</p>
             <h2>現在の趣味について</h2>
             <a name="background"></a>
-            <p>　左の画像（King Gnuのドラマー勢喜遊のドラムセット）にもある通り、私の現在の趣味はドラムです。　現在は、軽音楽サークルに所属しながらドラムを叩いています。</p>
+
+            <div class = "H-btn fadein-sentence1 btn"><i class="fas fa-chevron-circle-down"></i>　　Next more...</div>
+            <p id = "Nowhobby">　画像（King Gnuのドラマー勢喜遊のドラムセット）にもある通り、私の現在の趣味はドラムです。　現在は、軽音楽サークルに所属しながらドラムを叩いています。</p>
+            <div class="H-btn fadeout-sentence1 btn" ><i class="fas fa-chevron-circle-up"></i>　　close</div>
+
             <h2>経緯</h2>
             <a name="Activity"></a>
-            <p>　初めてドラムを触ったのは高校一年の秋で、友人と一緒にスタジオに入ったのがきっかけです。　その頃は、単に打楽器に興味がある程度で真剣にドラムに打ち込む予定はなかったのですが、友人とバンド練習の一環でスタジオに入るたびにドラムに対する興味が湧いてきて、大学に入ったら軽音楽サークルに入ることを決意しました。</p>
+
+            <div class = "H-btn fadein-sentence2 btn"><i class="fas fa-chevron-circle-down"></i>　　Next more...</div>
+            <p id="Background">　初めてドラムを触ったのは高校一年の秋で、友人と一緒にスタジオに入ったのがきっかけです。　その頃は、単に打楽器に興味がある程度で真剣にドラムに打ち込む予定はなかったのですが、友人とバンド練習の一環でスタジオに入るたびにドラムに対する興味が湧いてきて、大学に入った後、軽音楽サークルに入ることを決意しました。</p>
+            <div class="H-btn fadeout-sentence2 btn" ><i class="fas fa-chevron-circle-up"></i>　　close</div>
+
           </div>
         </div>
         <div class="hobby-center">
@@ -88,8 +111,8 @@
           <a name="Band"></a>
           <p>　下のボタンを押すと、各サークルのツイッターアカウントまで飛びます。↓↓</p>
           <div class="hobby-btn">
-            <a href="https://twitter.com/soundnote8510" target="_blank">中京大学</a>
-            <a href="https://twitter.com/meijo_keion" target="_blank">名城大学</a>
+            <a href="https://twitter.com/soundnote8510" target="_blank">八事キャンパス</a>
+            <a href="https://twitter.com/meijo_keion" target="_blank">　名城大学　　</a>
           </div>
           <h2>バンド紹介</h2>
           <p>　以下に僕が個人的に好きなバンドのいくつかを表にしてまとめてみたので、ぜひご覧ください！</p>
@@ -159,7 +182,7 @@
     <a name="link"></a>
     <div class="link-wrapper">
       <div class="container">
-        <h1>アンケート(工事中)</h1>
+        <h1>アンケート</h1>
         <form class="" action="index.html" method="post">
           <p>このサイトのどこが気に入りましたか？</p>
           <p>
@@ -181,28 +204,41 @@
           <input type="submit" name="submit" value="送信">
           <input type="reset" name="reset" value="取消">
         </form>
+
+        <form action="mailto:t317004@chukyo-u.ac.jp" method="post" enctype="text/plain">
+          <p>
+            <b>中京大学ネーム入りカップ</b>
+            <input type="hidden" name="code" value="ABC101"><br>
+            780円 <input type="hidden" name="price" value="780"><br>
+            個数× <input type="text" name="number" size="2" value="0">
+          </p>
+          <input type="submit" name="submit" value="送信">
+          <input type="reset" name="reset" value="取消">
+        </form>
       </div>
     </div>
 
     <footer>
-      <div class="container">
+      <div id="link" class="container">
         <div class="left-footer">
           <h3>Links</h3>
           <div class="footer-row">
             <div class="footer-column">
               <h5>Introduction</h5>
-              <a href="#top">はじめに</a>
+              <a class="first-btn btn">はじめに</a>
 
             </div>
             <div class="footer-column">
               <h5>profile</h5>
-              <a href="#own">自己紹介</a>
+              <a class="own-btn btn">自己紹介</a>
+              <a href="https://www.chukyo-u.ac.jp/" target="_blank">中京大学ホームページ</a>
               <a href="https://studiomtoyota.wixsite.com/studiom" target="_blank">スタジオM公式サイト</a>
               <a href="https://fivenewold.com/" target = "_blank">FIVE NEW OLD　Official site</a>
             </div>
+
             <div class="footer-column">
               <h5>hobby</h5>
-              <a href="#hobby">趣味紹介</a>
+              <a class ="Hobby-btn btn">趣味紹介</a>
               <a href="#hobby-now">現在の趣味について</a>
               <a href="#background">経緯</a>
               <a href="#Activity">現在の活動内容</a>
@@ -225,12 +261,12 @@
         <div class="right-footer">
 
         </div>
-        <p>copyright (c) tettu all rights reserved.</p>
+        <p>copyright (c) Ikehata Tetsuji all rights reserved.</p>
 
       </div>
 
     </footer>
 
+    <script src="JavaScript/script.js"></script>
   </body>
 </html>
-
