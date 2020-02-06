@@ -1,4 +1,7 @@
 $(function(){
+
+  //--------------------移動イベント-----------------------
+
   $('.first-btn').click(function() {
 
       var h1 = $('#first').offset().top;
@@ -35,6 +38,8 @@ $(function(){
 
   });
 
+  //---------------------文章イベント------------------------
+
   $('.fadein-sentence1').click(function(){
     $('#Nowhobby').stop().fadeIn(1000);
     $('.fadeout-sentence1').stop().fadeIn(1);
@@ -62,6 +67,18 @@ $(function(){
       $('.fadeout-sentence2').stop().fadeOut(1);
     },1000);
   });
+
+  //---------------------メニューイベント----------------------
+
+  $('#menu-icon').click(function(){
+    $('#menu-icon').parent().find("#menu-contents").animate({'marginRight':'300px'},300);
+  });
+
+  $('#cross-icon').click(function(){
+    $('#menu-icon').parent().find("#menu-contents").animate({'marginRight':'0px'},300);
+  });
+
+
 
 
 })
