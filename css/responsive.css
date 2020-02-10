@@ -18,6 +18,11 @@
   .right-header a{
     display:none;
   }
+  
+  .this-wrapper h1{
+    color:orange;
+  }
+  
   .own-center{
     padding:0;
   }
