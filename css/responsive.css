@@ -1,6 +1,13 @@
-@media screen and (min-width:781px) {
+@media screen and (max-width:781px) {
   footer{
 
+  }
+
+  .own-center{
+    padding:0;
+  }
+  .hobby-center{
+    margin:40px 0;
   }
 }
 @media screen and (max-width:480px) {
@@ -11,18 +18,18 @@
   .top-wrapper h1{
     font-size:60px;
   }
+
   .own-wrapper h1{
     border-radius: 40px;
+  }
+
+  .this-wrapper h1{
+    color:orange;
   }
 
   .right-header a{
     display:none;
   }
-  
-  .this-wrapper h1{
-    color:orange;
-  }
-  
   .own-center{
     padding:0;
   }
