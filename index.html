@@ -23,17 +23,20 @@
           <div id="menu-icon" class="btn">
             <i class="fas fa-bars"></i>
           </div>
-          <div id ="menu-contents" class = "off">
-            <div id="cross-icon">
+          <div id ="menu-contents" class = "conteiner">
+            <div id="cross-icon" class = "btn cross-btn">
               <i class="fas fa-times"></i>
             </div>
 
-            <h2>menu</h2>
-            <i class="fas fa-user-circle"></i>
-            <p>はじめに</p>
-            <p>自己紹介</p>
-            <p>趣味紹介</p>
-            <p>Links</p>
+            <div class="menu-sentence">
+              <h2>menu</h2>
+              <i class = "btn fas fa-user-circle"></i>
+              <p class = "btn first-btn">はじめに</p>
+              <p class = "btn own-btn">自己紹介</p>
+              <p class = "btn Hobby-btn">趣味紹介</p>
+              <p class = "btn link-btn">Links</p>
+            </div>
+
           </div>
         </div>
 
@@ -60,6 +63,7 @@
               <li>参考リンク</li>
             </ul>
             <p>上記の中でも特に趣味紹介を多く取り上げていきたいと思います。　また、今回の制作にあたって特にデザインについて力をいれて制作しました。参考にした本やサイトについてはページ下部にまとめていますので、興味のある点があれば参考までにご覧ください。</p>
+            <div class = "T-btn Reference-btn btn"><i class="fas fa-chevron-circle-down"></i>　　Page bottom...</div>
       </div>
     </div>
 
@@ -110,15 +114,15 @@
           <p>　さらに、他校との交流として、不定期ではありますが合同ライブを開催しています。　開催した主な大学は、中京大学八事キャンパス、名城大学で近日、淑徳大学とも合同ライブを行う予定です。</p>
           <a name="Band"></a>
           <p>　下のボタンを押すと、各サークルのツイッターアカウントまで飛びます。↓↓</p>
-          <div class="hobby-btn">
-            <a href="https://twitter.com/soundnote8510" target="_blank">八事キャンパス</a>
+          <div class="hobby-btn btn chukyo">
+            <a target="_blank">中京大学</a>
           </div>
-          <div class = "hobby-btn">
-            <a href="https://twitter.com/meijo_keion" target="_blank">　名城大学　　</a>
+          <div class="hobby-btn btn meijyo">
+            <a target="_blank">名城大学</a>
           </div>
           <h2>バンド紹介</h2>
-          <p>　以下に僕が個人的に好きなバンドのいくつかを表にしてまとめてみたので、ぜひご覧ください！</p>
-          <table border="solid">
+          <p id="under-btn">　以下に僕が個人的に好きなバンドのいくつかを表にしてまとめてみたので、ぜひご覧ください！</p>
+          <table class = "table">
             <tr>
               <th colspan="2"></th>
               <th>バンド名</th>
@@ -182,7 +186,66 @@
     </div>
 
     <a name="link"></a>
-    
+    <div class="link-wrapper">
+      <div class="container">
+        <h1>アンケート</h1>
+        <form class="" action="index.html" method="post">
+          <p>このサイトのどこが気に入りましたか？</p>
+          <p>
+            <input type="checkbox" name="favorite" value="デザイン">デザイン
+          </p>
+          <p>
+            <input type="checkbox" name="favorite" value="貴重な情報源">貴重な情報源
+          </p>
+          <p>
+            <input type="checkbox" name="favorite" value="特になし">特になし
+          </p>
+
+          <p>性別を答えてください</p>
+          <p>
+            <input type="radio" name="sex" value="男性">男性<br>
+            <input type="radio" name="sex" value="女性">女性
+          </p>
+
+          <input type="submit" name="submit" value="送信">
+          <input type="reset" name="reset" value="取消">
+        </form>
+
+        <form action="mailto:t317004@chukyo-u.ac.jp" method="post" enctype="text/plain">
+          <p>
+            <b>中京大学ネーム入りカップ</b>
+            <input type="hidden" name="code" value="ABC101"><br>
+            780円 <input type="hidden" name="price" value="780"><br>
+            個数× <input type="text" name="number" size="2" value="0">
+          </p>
+          <input type="submit" name="submit" value="送信">
+          <input type="reset" name="reset" value="取消">
+        </form>
+      </div>
+    </div>
+
+    <div class="reference-wrapper" id = "reference">
+      <div class="container">
+        <h1>参考物</h1>
+        <p>このページを製作するにあたって、以下のようなサービスと本を参考にしました。　参考までにご覧ください！</p>
+
+        <table>
+          <tr>
+            <th>参考物</th>
+            <th>関連リンク</th>
+          </tr>
+          <tr>
+            <td>HTML&CSSとWebデザイン入門講座</td>
+            <td> <a href="https://www.amazon.co.jp/1%E5%86%8A%E3%81%A7%E3%81%99%E3%81%B9%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8FHTML-%EF%BC%86-CSS%E3%81%A8Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%85%A5%E9%96%80%E8%AC%9B%E5%BA%A7-Mana-ebook/dp/B07PS1ZJN6">Amazon関連リンク</a> </td>
+          </tr>
+          <tr>
+            <td>Progate</td>
+            <td> <a href="https://prog-8.com/">Progate｜公式ホームページ</a> </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
 
     <footer>
       <div id="link" class="container">
