@@ -36,6 +36,7 @@ header{
   font-size:20px;
   position:fixed;
   z-index:10;
+
 }
 
 #menu-contents{
@@ -43,9 +44,40 @@ header{
   position:fixed;
   top:0;
   width:400px;
+  height:500px;
   right:-400px;
-  background-color:white;
-  color:black;
+  background-color:black;
+  color:white;
+  opacity:0;
+}
+.menu-sentence{
+  display:none;
+  float:right;
+}
+
+#menu-icon{
+  padding-top:18px;
+  font-size:35px;
+  float:right;
+  opacity:0.8;
+  transition:all 0.5s;
+  display:none;
+}
+
+#menu-icon:hover{
+  opacity:1.0;
+}
+
+.cross-btn{
+  font-size:56px;
+}
+
+.first-btn{
+
+}
+
+.own-btn{
+
 }
 
 .left-header{
@@ -65,18 +97,6 @@ header{
   text-align:center;
 }
 
-#menu-icon{
-  padding-top:18px;
-  font-size:35px;
-  float:right;
-  opacity:0.8;
-  transition:all 0.5s;
-  display:none;
-}
-
-#menu-icon:hover{
-  opacity:1.0;
-}
 
 .fa {
   display:none;
@@ -151,11 +171,27 @@ header{
 .this-wrapper{
   height:900px;
   padding:40px;
+  background:rgba(255, 255, 255, 0.7);
   background-image:url("../img/back-image38.jpg");
   background-size:cover;
-  opacity:0.7;
 }
 
+.T-btn{
+  padding:10px;
+  margin:0 50px;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0.7;
+  border: 1px solid gray;
+  background-color: black;
+  color:white;
+  font-size:18px;
+  transition: all 1.0s;
+}
+
+.T-btn:hover{
+  opacity:1.0;
+}
 
 .this-wrapper h1{
   text-align:center;
@@ -170,8 +206,9 @@ header{
   padding-top:100px;
 }
 
-.this.wrapper p{
+.this-wrapper p{
   text-align:center;
+  padding-bottom:20px;
 }
 
 .this-wrapper ul{
@@ -287,20 +324,23 @@ header{
 
 .hobby-btn{
   text-align: center;
-}
-
-.hobby-btn a{
-  text-align: center;
   padding:15px 25px;
-  margin:30px;
+  margin-top:10px;
   background-color:orange;
   color:black;
   border-radius:2px;
   transition:all 0.5s;
+  border-radius:12px;
 }
 
-.hobby-btn a:hover{
+.hobby-btn a{
+  color:Black;
+}
+
+.hobby-btn:hover{
   opacity:0.8;
+  margin:10px;
+
 }
 
 .hobby-row{
@@ -317,12 +357,46 @@ header{
   margin:40px 230px;
 }
 
+.table th{
+  border-radius:5px;
+  background-color:#fd6767;
+}
+
+.table td{
+  border-radius:5px;
+  background: rgba(253, 67, 67, 0.7);
+}
+
+
+#under-btn{
+  text-align:center;
+}
+
 
 
 /*----------------------参考リンク-------------------------*/
 
 .link-wrapper{
   height:600px;
+}
+
+/*------------------------参考物-------------------------*/
+
+.reference-wrapper{
+  padding-top:60px;
+  background-image: url("../img/back-image35.jpg");
+  height:600px;
+}
+
+.reference-wrapper h1{
+  text-align:center;
+  font-size:40px;
+  padding-bottom:20px;
+  border-bottom:1px solid gray;
+}
+
+.reference-wrapper p{
+  text-align:center;
 }
 
 /*----------------------フッタ-------------------------*/
