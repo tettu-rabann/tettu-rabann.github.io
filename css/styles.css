@@ -395,12 +395,22 @@ header{
   border-bottom:1px solid gray;
 }
 
+.referencs-wrapper th{
+  border-radius:5px;
+  background-color:gray;
+}
+
+.reference-wrapper td{
+  border-radius:5px;
+  background: gray;
+}
+
+
 .reference-wrapper p{
   text-align:center;
 }
 
 .reference-wrapper a{
-  padding:8px 16px 8px;
   color:white;
   background-color:black;
   transition:all 0.5s;
