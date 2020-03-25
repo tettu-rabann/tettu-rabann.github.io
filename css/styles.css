@@ -399,6 +399,17 @@ header{
   text-align:center;
 }
 
+.reference-wrapper a{
+  color:white;
+  background-color:black;
+  transition:all 0.5s;
+  opacity:0.7;
+}
+
+.reference-wrapper a:hover{
+  opacity:1.0;
+}
+
 /*----------------------フッタ-------------------------*/
 
 footer{
