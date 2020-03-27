@@ -398,11 +398,17 @@ header{
 .referencs-wrapper th{
   border-radius:5px;
   background-color:gray;
+  border:solid 1px;
 }
 
 .reference-wrapper td{
   border-radius:5px;
   background: gray;
+  border:solid 1px;
+}
+
+.reference-wrapper table{
+  border-collapse:collapse;
 }
 
 
