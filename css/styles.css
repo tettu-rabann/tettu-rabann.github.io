@@ -403,6 +403,7 @@ header{
 
 .reference-wrapper th{
   border-radius:5px;
+  padding:6px;
 }
 
 .reference-wrapper td{
@@ -422,6 +423,7 @@ header{
 
 .reference-wrapper a{
   color:white;
+  border-radius:5px;
   background-color:black;
   transition:all 0.5s;
   opacity:0.7;
