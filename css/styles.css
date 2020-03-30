@@ -423,7 +423,7 @@ header{
 
 .reference-wrapper a{
   color:white;
-  border-radius:8px;
+  border-radius:6px;
   background-color:black;
   transition:all 0.5s;
   opacity:0.7;
