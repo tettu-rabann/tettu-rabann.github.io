@@ -422,9 +422,9 @@ header{
 }
 
 .reference-wrapper a{
-  padding:10px 20px;
+  padding:10px 36px;
   color:white;
-  border-radius:4px;
+  border-radius:12px;
   background-color:black;
   transition:all 0.5s;
   opacity:0.7;
