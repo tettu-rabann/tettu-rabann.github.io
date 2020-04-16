@@ -385,7 +385,8 @@ header{
 .reference-wrapper{
   padding-top:60px;
   background-image: url("../img/back-image35.jpg");
-  height:600px;
+  backgruond-size:cover;
+  height:800px;
 }
 
 .reference-wrapper h1{
