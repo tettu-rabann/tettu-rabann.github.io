@@ -50,6 +50,7 @@ header{
   color:white;
   opacity:0;
 }
+
 .menu-sentence{
   display:none;
   
@@ -424,7 +425,7 @@ header{
 
 .reference-wrapper a{
   margin-left:20px;
-  padding:6px 30px;
+  padding:4px 14px;
   color:white;
   border-radius:18px;
   background-color:black;
