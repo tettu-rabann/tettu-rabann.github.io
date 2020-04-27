@@ -1,15 +1,16 @@
-# 自己紹介兼ポートフォリオ紹介ページ
+# Own Profile | Portfolio page
 
-概要：私の基本的な情報と、ポートフォリオの紹介をまとめたページになります。このページを軸にして、今後のポートフォリオや活動報告をしていきたいと考えています。
+## Overview
 
-## Description
-
-### 今後の展望
-今後は、自身の活動（主にシステム制作）について紹介できるようなページにしようと考えています。また、現在はまだ静的なページなので、記事投稿機能や感想記入欄、他の制作物のリンク等も織り込むなどして、自身についての情報発信をどんどん行っていきたいと考えています。
-
+This is a page that summarizes my basic information and portfolio introduction.
 
 ## Author
-池端　徹治
+
+Ikehata Tetsuji 
 
 e-mail:tettu.blacky@gmail.com
-公開ウェブサイト：https://ripple.mydns.jp
+Portfolio:https://ripple.mydns.jp
+
+## Licence 
+
+copyright (c) Ikehata Tetsuji all rights reserved.
